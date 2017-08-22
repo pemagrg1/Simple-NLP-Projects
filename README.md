@@ -1,4 +1,4 @@
-# Machine_Learning-NLP
+# Machine_Learning-NLP_Programs
 ##1. Named_Entity_Recognition
 contains Python programs for Named Entity Recognition which includes:
 tokenizing
