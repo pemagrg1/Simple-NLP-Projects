@@ -1,4 +1,8 @@
 '''
+Author: Pema Gurung
+Date: 22-8-17
+'''
+'''
 open terminal and type:
 wget "http://nlp.stanford.edu/software/stanford-ner-2014-06-16.zip"
 unzip stanford-ner-2014-06-16.zip
