@@ -1,3 +1,7 @@
+'''
+Author: Pema Gurung
+Date: 21-8-17
+'''
 #using baidu, Google, bing translating the language
 #install translation : pip install translation
 
