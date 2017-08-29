@@ -1,3 +1,8 @@
+'''
+Author: Pema Gurung
+Date: 20-7-17
+'''
+
 import nltk
 text="This is a demo for NER TEXT where it identifies names like John,Steve and organization like Samsung and Apple and extracts only Noun, Proper Noun, Verb noun and Singular Noun"
 sentences = nltk.sent_tokenize(text)
