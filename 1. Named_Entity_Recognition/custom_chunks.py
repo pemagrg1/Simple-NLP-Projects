@@ -21,7 +21,11 @@ def NERprocess():
             #chunkGram = r"""Chunk: {<RB.?>*<VB.?>*<NNP>+<NN>?}"""
             #use pipeline "|" to use more pattern
             #use plus "+" to add more tags to the pattern 
-            chunkGram = r"""NE:  {<NN>+<NN>?|<NNP|NN>+<CC.*>+<NN>?}"""
+            #chunkGram = r"""NE:  {<NN>+<NN>?|<NNP|NN>+<CC.*>+<NN>?}"""
+            chunkGram = r"""
+                        NP: {<DT|PP\$>?<JJ>*<NN>}   # chunk determiner/possessive, adjectives and nouns
+                            {<NNP>+}                # chunk sequences of proper nouns
+                        """
             chunkParser = nltk.RegexpParser(chunkGram)
             chunked = chunkParser.parse(tagged)
             #print (chunked)
