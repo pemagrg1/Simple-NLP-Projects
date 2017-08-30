@@ -1,10 +1,10 @@
 # Machine_Learning-NLP_Programs
-##1. Named_Entity_Recognition
-contains Python programs for Named Entity Recognition which includes:
+## contains Python programs for Named Entity Recognition which includes:
 tokenizing
 POS tagging
 Chunking
 NamedEntity //yet to add
 
-##2. Language_Translator
-Translating language to any other language using Python
+## Translating language to any other language using Python
+
+## Contains collection of stopwords in stopwords folder
