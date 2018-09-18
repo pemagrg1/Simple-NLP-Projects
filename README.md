@@ -3,7 +3,7 @@
 tokenizing
 POS tagging
 Chunking
-NamedEntity //yet to add
+NamedEntity
 
 ## Translating language to any other language using Python
 
