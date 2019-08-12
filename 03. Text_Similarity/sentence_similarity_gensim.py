@@ -3,8 +3,10 @@ from scipy import spatial
 import nltk
 import numpy as np
 from collections import deque
-gensim_model_path = "/media/ekbana/ekbana500/Pema/datasets/English/GoogleNews-vectors-negative300.bin" \
-                    ""
+gensim_model_path = "<path_to_gensim_model>"
+"""
+gensim model can be downloaded from: https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
+"""
 model = gensim.models.KeyedVectors.load_word2vec_format(gensim_model_path, binary=True)
 index2word_set = set(model.wv.index2word)
 
