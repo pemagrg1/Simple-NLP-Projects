@@ -2,7 +2,7 @@ import gensim
 from scipy import spatial
 import nltk
 import numpy as np
-from collections import deque
+
 gensim_model_path = "<path_to_gensim_model>"
 """
 gensim model can be downloaded from: https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
