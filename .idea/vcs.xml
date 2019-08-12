@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/02. KeywordsExtraction" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07. Text_Classification/classify_using_glove" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07. Text_Classification/gender_classifier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/clustering_programs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/text-extraction-from-documents" vcs="Git" />
   </component>
 </project>
