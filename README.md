@@ -27,6 +27,6 @@ get the part of speech tags<br>
 do the Named Entity Recognition<br>
 
 #### Installation
-sudo pip install spacy
-sudo pip install nltk
+sudo pip install spacy<br>
+sudo pip install nltk<br>
 
