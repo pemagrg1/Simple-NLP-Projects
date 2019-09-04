@@ -45,7 +45,10 @@ def train_bpsd(df, vectorizer):
     X = vectorizer.fit_transform(df["text"].values.astype('U'))
     y = df['category']
     # train_test(X, y)
-    model = svm.LinearSVC()
+    # model = svm.LinearSVC()
+    model = linear_model.SGDClassifier(learning_rate='constant',
+                                       eta0=0.1, shuffle=False,
+                                       n_iter=1)
 
     print("==fitting the model===")
     model.fit(X.A, y)
