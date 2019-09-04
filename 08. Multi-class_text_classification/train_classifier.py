@@ -1,6 +1,7 @@
 """
     Author: Pema Gurung
     Dataset:  BBC text categorization
+    classes in the dataset: ['tech', 'business', 'sport', 'entertainment', 'politics']
 
 """
 from sklearn.feature_extraction.text import TfidfVectorizer
