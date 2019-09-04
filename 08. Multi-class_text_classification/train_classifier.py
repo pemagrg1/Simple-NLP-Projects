@@ -1,4 +1,8 @@
-import pandas as pd
+"""
+    Author: Pema Gurung
+    Dataset:  BBC text categorization
+
+"""
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from sklearn import svm
