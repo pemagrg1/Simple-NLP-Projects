@@ -49,7 +49,7 @@ for token in most_freq:
     for document in corpus:
         if token in nltk.word_tokenize(document):
             doc_containing_word += 1
-    word_idf_values[token] = np.log(len(corpus)/(1 + doc_containing_word))
+    word_idf_values[token] = np.log(len(corpus)/(doc_containing_word))
 
 print(word_idf_values)
 print("TFIDF")
