@@ -23,3 +23,16 @@ result:
 True
 [My sister: [My sister, She], a dog: [a dog, him]]
 """
+def testing():
+    sent = "My sister has a dog. She loves him."
+    doc = nlp(sent)
+    if doc._.has_coref:
+        corefgot = doc._.coref_clusters
+        for i in corefgot:
+            sent = sent.replace(str(i.mentions[1]), str(i.mentions[0]))
+    print(sent)
+
+testing()
+"""
+Result: My sister has a dog. My sister loves a dog.
+"""
