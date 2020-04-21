@@ -16,15 +16,15 @@ data = pd.read_csv('https://storage.googleapis.com/dataset-uploader/bbc/bbc-text
 print (data.category.unique())
 print(data.head(2))
 
-def save_pkl_joblib(model_path,vectorizer_path):
+def save_pkl_joblib(model_path):
     joblib.dump(model, model_path+"model.sav")
-    joblib.dump(vectorizer_model, vectorizer_path+"vectorizer.sav")
+    joblib.dump(vectorizer_model, model_path+"vectorizer.sav")
     print ("====done saving into pickle using Joblib!====")
 
 
-def save_pkl_pickle(model_path,vectorizer_path):
+def save_pkl_pickle(model_path):
     pickle.dump(model, open(model_path+"model.pickle", 'wb'))
-    pickle.dump(vectorizer_model, open(vectorizer_path+"vectorizer.pickle", "wb"))
+    pickle.dump(vectorizer_model, open(model_path+"vectorizer.pickle", "wb"))
     print ("====done saving into pickle using Pickle!====")
 
 
@@ -43,8 +43,7 @@ def train_test_model(X, y):
 
 Project_path = "Machine_Learning-NLP_programs"
 model_path = Project_path + "/08. Multi-class_text_classification/models/"
-vectorizer_path = Project_path + "/08. Multi-class_text_classification/models/"
 
 model, vectorizer_model = train_test_model(data["text"], data["category"])
-save_pkl_pickle(model_path,vectorizer_path)
-save_pkl_joblib(model_path,vectorizer_path)
+save_pkl_pickle(model_path)
+save_pkl_joblib(model_path)
